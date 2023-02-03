@@ -23,7 +23,7 @@
 }
 
 .footer div {
-    padding: 30px 0;
+    padding: 3cd da 0px 0;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
