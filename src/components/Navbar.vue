@@ -1,8 +1,21 @@
 <script setup>
+import { ref } from "vue";
+
+const fadeBlackBox = ref(false);
+
+window.addEventListener("scroll", function () {
+  if (window.pageYOffset != 0) {
+    fadeBlackBox.value = true;
+  } else {
+    fadeBlackBox.value = false;
+  }
+});
 </script>
 
 <template>
-  <section class="navbar">
+  <section
+    :class="{ navbar: true, 'fixed-color': fadeBlackBox, 'overflow-cap': true }"
+  >
     <div class="navbar-left">
       <a href="/">
         <img
@@ -23,7 +36,7 @@
 
 <style>
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -34,6 +47,11 @@
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
+}
+
+.fixed-color {
+  background-color: rgba(255, 186, 186, 0.35);
+  transition: background-color 0.5s ease-in;
 }
 
 .logo-img {

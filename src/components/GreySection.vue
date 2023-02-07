@@ -3,7 +3,7 @@ defineProps(["person", "quote"]);
 </script>
 
 <template>
-  <section class="grey-box">
+  <section class="grey-box overflow-cap">
     <div class="grey-center-box">
       <h3>{{ person }}</h3>
       <blockquote>

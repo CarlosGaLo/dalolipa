@@ -8,7 +8,7 @@ function activateAudio() {
 </script>
 
 <template>
-  <section class="big-video">
+  <section class="big-video overflow-cap">
     <video class="header-video" autoplay muted loop>
       <source
         src="https://www.masquepalabrasoratoria.es/david-navarro/chaman_trailer.mp4"
@@ -31,7 +31,7 @@ function activateAudio() {
   position: relative;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   background-color: grey;

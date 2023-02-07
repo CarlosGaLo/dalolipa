@@ -11,12 +11,9 @@ import Footer from "../components/Footer.vue";
   <section class="overflow-cap">
     <Navbar />
     <BigVideo />
-    <GreySection
-      person="Odín Padredetodos"
-      quote="Grande David, desde aquí a Madrid"
-    />
-    <promo-left />
-    <promo-right />
+    <GreySection person="Judini" quote="Buah, loco. Brutal el notas este." />
+    <PromoLeft />
+    <PromoRight />
     <Footer />
   </section>
 </template>
