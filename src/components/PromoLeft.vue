@@ -33,7 +33,7 @@
 
 <style>
 .orderer {
-  height: 40vh;
+  height: 80vh;
   width: 100vw;
   display: flex;
   justify-content: space-evenly;
@@ -68,6 +68,7 @@
 .standar-text {
   width: 25vw;
   min-width: 200px;
+  font-size: 20px;
 }
 
 .a-btn {

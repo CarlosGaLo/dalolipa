@@ -1,28 +1,23 @@
 <script setup>
 import { ref } from "vue";
 
-const fadeBlackBox = ref(false);
+const fadeBlackBox = ref(true);
 
-window.addEventListener("scroll", function () {
-  if (window.pageYOffset != 0) {
-    fadeBlackBox.value = true;
-  } else {
-    fadeBlackBox.value = false;
-  }
-});
+// window.addEventListener("scroll", function () {
+//   if (window.pageYOffset != 0) {
+//     fadeBlackBox.value = true;
+//   } else {
+//     fadeBlackBox.value = false;
+//   }
+// });
 </script>
 
 <template>
-  <section
-    :class="{ navbar: true, 'fixed-color': fadeBlackBox, 'overflow-cap': true }"
-  >
+  <section :class="{ navbar: true, 'fixed-color': fadeBlackBox, 'overflow-cap': true }">
     <div class="navbar-left">
       <a href="/">
-        <img
-          class="logo-img"
-          src="../assets/fotos_web/imagen_corporativa/RGB/PNG/DN-long-rojo.png"
-          alt="Logo David Navarro"
-      /></a>
+        <img class="logo-img" src="../assets/fotos_web/imagen_corporativa/RGB/PNG/DN-long-rojo.png"
+          alt="Logo David Navarro" /></a>
       <a href="" class="magic-button">PRÓXIMOS EVENTOS</a>
       <a href="" class="magic-button">CONTRATACIÓN</a>
     </div>

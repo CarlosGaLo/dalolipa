@@ -10,18 +10,11 @@ function activateAudio() {
 <template>
   <section class="big-video overflow-cap">
     <video class="header-video" autoplay muted loop>
-      <source
-        src="https://www.masquepalabrasoratoria.es/david-navarro/chaman_trailer.mp4"
-        type="video/mp4"
-      />
+      <source src="https://www.masquepalabrasoratoria.es/david-navarro/chaman_trailer.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     <div class="audio" @click="activateAudio">
-      <img
-        class="audio-img"
-        src="https://svgsilh.com/svg/304749.svg"
-        alt="audio activado"
-      />
+      <img class="audio-img" src="https://svgsilh.com/svg/304749.svg" alt="audio activado" />
     </div>
   </section>
 </template>
@@ -55,6 +48,7 @@ function activateAudio() {
   height: 50px;
   transition: background-color 0.5s ease;
 }
+
 .audio:hover {
   background-color: rgb(255, 255, 255);
   cursor: pointer;
@@ -74,6 +68,7 @@ function activateAudio() {
   transition: background-color 0.5s ease;
   background-color: rgb(43, 43, 43);
 }
+
 .muted:hover {
   transition: background-color 0.5s ease;
   background-color: rgb(43, 43, 43);
