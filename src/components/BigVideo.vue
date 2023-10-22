@@ -10,7 +10,7 @@ function activateAudio() {
 <template>
   <section class="big-video overflow-cap">
     <video class="header-video" autoplay muted loop>
-      <source src="https://www.masquepalabrasoratoria.es/david-navarro/chaman_trailer.mp4" type="video/mp4" />
+      <source src="http://www.cosmosrol.com/david-navarro/chaman_trailer.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     <div class="audio" @click="activateAudio">

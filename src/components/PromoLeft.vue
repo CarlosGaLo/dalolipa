@@ -1,69 +1,68 @@
-<script setup></script>
+<script setup>
+const props = defineProps({
+  info: {
+    titleSpa: String,
+    titleEng: String,
+    textSpa: String,
+    textEng: String,
+    imgUrl: String,
+    youUrl: String,
+  },
+});
+</script>
 
 <template>
   <section class="orderer">
-    <div class="big-img-lft">
+    <div v-if="props.info?.imgUrl" class="big-img-lft">
       <img
         class="img-david-navarro-left"
-        src="../assets/fotos_web/recorte_1.png"
+        :src="props.info.imgUrl"
         alt="mago David Navarro"
       />
     </div>
-    <div class="standar-text">
-      <h2>Experiencia inolvidable</h2>
-      <p>
-        La gracia de la magia es que esté pasando algo que hace cinco minutos
-        parecía imposible.
-      </p>
-      <a
-        class="a-btn"
-        href="https://es.wikipedia.org/wiki/Magia"
-        target="_blank"
-        >Saber más</a
-      >
-    </div>
-    <div class="standar-text">
-      <p>
-        The magic in magic is to see something that looks impossible five
-        minutes before.
-      </p>
-    </div>
+    <div v-if="props.info?.youUrl"></div>
+    <section class="texts">
+      <div v-if="props.info?.titleSpa" class="standar-text">
+        <h2>{{ props.info.titleSpa }}</h2>
+        <p v-html="props.info.textSpa"></p>
+      </div>
+      <div v-if="props.info?.titleEng" class="standar-text">
+        <h2>{{ props.info.titleEng }}</h2>
+        <p v-html="props.info.textEng"></p>
+      </div>
+    </section>
   </section>
 </template>
 
-<style>
+<style scoped>
 .orderer {
-  height: 80vh;
+  margin: 100px 25px;
   width: 100vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
+  gap: 50px;
 }
 
 .big-img-lft {
-  width: 30%;
   max-width: 500px;
   min-width: 300px;
   display: inline;
 }
 
 .img-david-navarro-left {
-  transform-origin: 100% 100%;
-  position: relative;
-  max-width: 500px;
-  min-width: 300px;
-  right: 100px;
+  width: 500px;
   height: 550px;
   object-fit: cover;
   transition: all 0.5s ease-in;
 }
 
-.img-david-navarro-left:hover {
+/* .img-david-navarro-left:hover {
   transition: all 0.5s ease-in;
   height: 600px;
   right: 0;
-}
+} */
 
 .standar-text {
   width: 25vw;
@@ -75,21 +74,56 @@
   margin-top: 260px;
 }
 
-@media screen and (max-width: 1350px) {
+.texts {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+  .standar-text {
+    font-size: 18px;
+  }
+
+  .img-david-navarro-left {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    transition: all 0.5s ease-in;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .standar-text {
+    font-size: 16px;
+    text-align: center;
+  }
+
   .orderer {
-    height: auto;
-    margin: 64px 0;
     flex-direction: column;
   }
 
-  .img-david-navarro-left{
-    right: 0;
+  .texts {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-text {
+    font-size: 18px;
+  }
+  .standar-text {
+    font-size: 14px;
+    text-align: center;
   }
 
-  .img-david-navarro-left:hover {
+  .img-david-navarro-left {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
     transition: all 0.5s ease-in;
-    height: 600px;
-    right: 0;
   }
 }
 </style>
