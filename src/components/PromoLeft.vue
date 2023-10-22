@@ -45,12 +45,6 @@ const props = defineProps({
   gap: 50px;
 }
 
-.big-img-lft {
-  max-width: 500px;
-  min-width: 300px;
-  display: inline;
-}
-
 .img-david-navarro-left {
   width: 500px;
   height: 550px;
@@ -100,6 +94,9 @@ const props = defineProps({
     font-size: 16px;
     text-align: center;
   }
+  .orderer {
+  margin: 100px 0;
+}
 
   .orderer {
     flex-direction: column;

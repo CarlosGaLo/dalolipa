@@ -46,22 +46,16 @@ const props = defineProps({
   gap: 50px;
 }
 .img-david-navarro-right {
-  max-width: 500px;
-  min-width: 300px;
+  width: 500px;
   height: 550px;
   object-fit: cover;
+  background-color: blue;
 }
 /* .img-david-navarro-right:hover {
   transition: all 0.5s ease-out;
   height: 600px;
   right: 0;
 } */
-
-.big-img-rgt {
-  width: 30%;
-  max-width: 500px;
-  min-width: 300px;
-}
 
 .standar-text {
   width: 25vw;
@@ -76,9 +70,14 @@ const props = defineProps({
   justify-content: center;
 }
 
+
 @media screen and (max-width: 1300px) {
   .standar-text {
     font-size: 18px;
+  }
+
+  .orderer {
+    margin: 100px 0;
   }
 
   .img-david-navarro-right {
