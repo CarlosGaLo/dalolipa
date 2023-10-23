@@ -113,4 +113,5 @@ function autoNextImg() {
   border-left: 8px solid rgba(160, 114, 219, 0.926);
   border-bottom: 8px solid rgba(160, 114, 219, 0.926);
 }
+
 </style>

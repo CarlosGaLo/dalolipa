@@ -232,4 +232,12 @@ ul li *:hover {
   transform: rotate(-135deg);
   transition: all 0.3s ease-in-out;
 }
+
+
+
+@media screen and (max-width: 500px) {
+  .logo-img{
+    width: 200px;
+  }
+}
 </style>

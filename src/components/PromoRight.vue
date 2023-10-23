@@ -70,7 +70,6 @@ const props = defineProps({
   justify-content: center;
 }
 
-
 @media screen and (max-width: 1300px) {
   .standar-text {
     font-size: 18px;
@@ -124,6 +123,15 @@ const props = defineProps({
     height: 350px;
     object-fit: cover;
     transition: all 0.5s ease-in;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .texts {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
   }
 }
 </style>

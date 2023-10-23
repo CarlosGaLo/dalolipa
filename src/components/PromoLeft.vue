@@ -123,4 +123,15 @@ const props = defineProps({
     transition: all 0.5s ease-in;
   }
 }
+
+
+
+@media screen and (max-width: 450px) {
+  .texts{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 </style>
