@@ -61,6 +61,7 @@ const props = defineProps({
   width: 25vw;
   min-width: 200px;
   font-size: 20px;
+  
 }
 
 .texts {
