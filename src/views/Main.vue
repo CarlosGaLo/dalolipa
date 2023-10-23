@@ -14,7 +14,7 @@ const infoForPromoLeft = {
     "<p>La magia es un arte efímero que debes visitar en directo.</p><p>¡Descubre los espectáculos de los que vas a disfrutar!</p>",
   textEng:
     "<p>Magic is an ephemeral art that you must visit live.</p><p>Discover the shows you're going to enjoy!</p>",
-  imgUrl: "/pro_images/David_Navarro_06.jpg",
+  imgUrl: "/pro_images/David_Navarro_6.jpg",
 };
 
 const infoForPromoRight = {
