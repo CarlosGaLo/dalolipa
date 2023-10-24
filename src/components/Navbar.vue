@@ -2,11 +2,21 @@
 import { ref } from "vue";
 import RRSS from "../components/RRSS.vue";
 
-const fadeBlackBox = ref(true);
+const fadeBlackBox = ref(false);
 const isBurger = ref(false);
 
 function showBurgerMenu() {
   isBurger.value = !isBurger.value;
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    fadeBlackBox.value = true;
+  } else {
+    fadeBlackBox.value = false;
+  }
 }
 </script>
 
@@ -16,7 +26,7 @@ function showBurgerMenu() {
     :class="{ 'filter-show': isBurger, 'filter-hidden': !isBurger }"
   />
   <section
-    :class="{ navbar: true, 'fixed-color': fadeBlackBox, 'overflow-cap': true }"
+    :class="{ navbar: true, 'fixed-color': fadeBlackBox, 'transparent':!fadeBlackBox, 'overflow-cap': true }"
   >
     <div class="navbar-left">
       <a href="/">
@@ -78,8 +88,13 @@ function showBurgerMenu() {
 }
 
 .fixed-color {
-  background-color: rgba(255, 186, 186, 0.35);
-  transition: background-color 0.5s ease-in;
+  background-color: rgba(158, 158, 158, 0.35);
+  transition: background-color 0.2s ease-in;
+}
+
+.transparent {
+  background-color: rgba(240, 248, 255, 0);
+  transition: background-color 0.2s ease-in;
 }
 
 .logo-img {
@@ -139,7 +154,7 @@ function showBurgerMenu() {
   height: 4px;
   border-radius: 1px;
   border: none;
-  background-color: red;
+  background-color: rgb(145, 145, 145);
   margin-bottom: 4px;
 }
 

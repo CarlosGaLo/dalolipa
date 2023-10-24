@@ -28,15 +28,25 @@ const infoForForPromoRight2 = {
 
 <template>
   <section class="overflow-cap">
-    <MainGalery class="main-galery" />
-    <PromoRight :info="infoForForPromoRight"></PromoRight>
+    <div>
+      <img src="pro_images/David_Navarro_64.jpg" class="full-screen" alt="shows image">
+    </div>
+    <PromoRight class="separator" :info="infoForForPromoRight"></PromoRight>
     <PromoLeft :info="infoForPromoLeft"></PromoLeft>
     <PromoRight :info="infoForForPromoRight2"></PromoRight>
   </section>
 </template>
 
 <style scoped>
+.full-screen{
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+}
 .main-galery {
   overflow: hidden;
+}
+.separator{
+  margin-top: 180px;
 }
 </style>

@@ -7,6 +7,7 @@ const props = defineProps({
     textEng: String,
     imgUrl: String,
     youUrl: String,
+    nameURL: String,
   },
 });
 </script>
@@ -23,11 +24,21 @@ const props = defineProps({
     <div v-if="props.info?.youUrl"></div>
     <section class="texts">
       <div v-if="props.info?.titleSpa" class="standar-text">
-        <h2>{{ props.info.titleSpa }}</h2>
+        <h2 v-if="!props.info?.nameURL">{{ props.info.titleSpa }}</h2>
+        <h2 v-if="props.info?.nameURL">
+          <router-link :to="props.info?.nameURL">{{
+            props.info.titleSpa
+          }}</router-link>
+        </h2>
         <p v-html="props.info.textSpa"></p>
       </div>
       <div v-if="props.info?.titleEng" class="standar-text">
-        <h2>{{ props.info.titleEng }}</h2>
+        <h2 v-if="!props.info?.nameURL">{{ props.info.titleEng }}</h2>
+        <h2 v-if="props.info?.nameURL">
+          <router-link :to="props.info?.nameURL">{{
+            props.info.titleEng
+          }}</router-link>
+        </h2>
         <p v-html="props.info.textEng"></p>
       </div>
     </section>

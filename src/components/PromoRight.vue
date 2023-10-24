@@ -7,6 +7,7 @@ const props = defineProps({
     textEng: String,
     imgUrl: String,
     youUrl: String,
+    nameURL: String,
   },
 });
 </script>
@@ -15,11 +16,21 @@ const props = defineProps({
   <section class="orderer orderer-inv overflow-cap">
     <article class="texts">
       <div v-if="props.info?.titleEng" class="standar-text main-text">
-        <h2>{{ props.info.titleEng }}</h2>
+        <h2 v-if="!props.info?.nameURL">{{ props.info.titleEng }}</h2>
+        <h2 v-if="props.info?.nameURL">
+          <router-link :to="props.info?.nameURL">{{
+            props.info.titleEng
+          }}</router-link>
+        </h2>
         <p v-html="props.info.textEng"></p>
       </div>
       <div v-if="props.info?.titleSpa" class="standar-text main-text">
-        <h2>{{ props.info.titleSpa }}</h2>
+        <h2 v-if="!props.info?.nameURL">{{ props.info.titleSpa }}</h2>
+        <h2 v-if="props.info?.nameURL">
+          <router-link :to="props.info?.nameURL">{{
+            props.info.titleSpa
+          }}</router-link>
+        </h2>
         <p v-html="props.info.textSpa"></p>
       </div>
     </article>
@@ -61,7 +72,6 @@ const props = defineProps({
   width: 25vw;
   min-width: 200px;
   font-size: 20px;
-  
 }
 
 .texts {

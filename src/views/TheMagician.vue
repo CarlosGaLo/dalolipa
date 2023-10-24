@@ -1,11 +1,11 @@
 <script setup></script>
 
 <template>
-  <article>
+  <article class="background">
     <section class="top-margin"></section>
     <section class="two-columns">
       <div>
-        <img class="image" src="/pro_images/David_Navarro_26.jpg" alt="" />
+        <img class="image" src="/David_Navarro_26_transparent.png" alt="" />
       </div>
       <div>
         <h1 class="center-text">David Navarro, ilusión y pasión</h1>
@@ -40,6 +40,9 @@
 </template>
 
 <style scoped>
+.background{
+  background-color: #FAFAFA;
+}
 .center-text {
   text-align: center;
   font-size: 30px;
