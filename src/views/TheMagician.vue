@@ -10,38 +10,42 @@
       <div>
         <h1 class="center-text">David Navarro, ilusión y pasión</h1>
         <p>
-          Lorem fistrum te voy a borrar el cerito torpedo va usté muy cargadoo
-          mamaar te va a hasé pupitaa. Sexuarl mamaar diodenoo papaar papaar
-          diodenoo jarl. Ese hombree condemor ese que llega fistro te va a hasé
-          pupitaa mamaar llevame al sircoo tiene musho peligro. Me cago en tus
-          muelas ese pedazo de no puedor ese pedazo de diodenoo qué dise usteer.
-          Por la gloria de mi madre se calle ustée diodenoo ese hombree diodenoo
-          al ataquerl. Se calle ustée a gramenawer la caidita ese hombree mamaar
-          diodeno condemor. Benemeritaar hasta luego Lucas fistro hasta luego
-          Lucas ahorarr jarl ese pedazo de pecador está la cosa muy malar.
-          Mamaar está la cosa muy malar pupita fistro amatomaa. Por la gloria de
-          mi madre mamaar de la pradera condemor ese hombree tiene musho
-          peligro. Qué dise usteer mamaar a wan fistro benemeritaar.
+          Nacido en Málaga, desde pequeño empieza su carrera artística, más de
+          15 años en el mundo de la magia y trabajado en todos los hoteles de la
+          costa del sol. Su don es la constancia, perseverancia Y una
+          impresionante capacidad que tiene para ejercer la magia. Es un gran
+          luchador. Una persona fuerte con ideales y principios. Tiene gran
+          hambre de futuro y muchas ganas de salir adelante.
         </p>
         <p>
-          Diodeno ese hombree qué dise usteer amatomaa a wan tiene musho peligro
-          no puedor fistro. Mamaar la caidita pecador diodeno fistro ese
-          hombree. Fistro benemeritaar está la cosa muy malar qué dise usteer
-          papaar papaar por la gloria de mi madre hasta luego Lucas fistro.
-          Fistro pecador de la pradera no te digo trigo por no llamarte Rodrigor
-          caballo blanco caballo negroorl diodenoo no puedor va usté muy
-          cargadoo ese que llega va usté muy cargadoo por la gloria de mi madre.
-          A peich ese que llega no te digo trigo por no llamarte Rodrigor
-          benemeritaar benemeritaar llevame al sircoo ahorarr papaar papaar.
+          Reconocido como mago por el C.I.M (círculo de ilusionistas malagueños)
+          y por la S.E.I (sociedad española de ilusionismo).
         </p>
+        <p>
+          Proviene de un linaje político de grandes magos internacionales.
+          Discípulos del mago de reconocimiento mundial Dani Daortiz que a su
+          vez es discípulo de Juan Tamariz.
+        </p>
+        <p>Ganador de varios premios mágicos nacionales:</p>
+        <p>1º premio quedada mágica andaluza 2014</p>
+        <p>1º premio festival de magia en Albolote 2014</p>
+        <p>2º premio de escena en el festival de cabra 2015</p>
+        <p>1º premio nacional galapagar 2013</p>
+        <p>
+          Con sus diferentes estilos de espectáculos, encaja en cualquier tipo
+          de situación.
+        </p>
+        <p>Tiene disponibilidad para moverse donde sea y coche propio</p>
+        <p>Un nivel de inglés b2 (se comunica bastante bien)</p>
+        <p>Está abierto a cualquier tipo de preguntas.</p>
       </div>
     </section>
   </article>
 </template>
 
 <style scoped>
-.background{
-  background-color: #FAFAFA;
+.background {
+  background-color: #fafafa;
 }
 .center-text {
   text-align: center;
@@ -60,12 +64,12 @@
 }
 
 .two-columns div {
-    overflow: hidden;
+  overflow: hidden;
   width: 35%;
 }
 
 .image {
-    position: absolute;
+  position: absolute;
   object-fit: cover;
   width: 100%;
 }
